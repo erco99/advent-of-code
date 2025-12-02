@@ -20,11 +20,9 @@ def solve(ranges):
             
     return result
     
-
 if __name__ == "__main__":
     filename = sys.argv[1]
     with open(filename, "r") as f:
         content = f.read()
-
 
     print(solve(content))
