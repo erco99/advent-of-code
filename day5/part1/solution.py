@@ -1,11 +1,10 @@
 import sys
 
 def solve(input):
-    parti = input.strip().split("\n\n")
+    parts = input.strip().split("\n\n")
 
-    # splitto ogni parte in righe
-    ranges = parti[0].splitlines()
-    numbers = [int(n) for n in parti[1].splitlines()]
+    ranges = parts[0].splitlines()
+    numbers = [int(n) for n in parts[1].splitlines()]
     
     ranges = [tuple(map(int, item.split('-'))) for item in ranges]
     
